@@ -1,9 +1,8 @@
 ### **README.md**
 
-```markdown
 # DevOps Interview Preparation
 
-![DevOps Interview Prep Banner](https://your-banner-url-here.com)
+![DevOps Interview Prep Banner](./assets/devops-banner.jpeg)
 
 ---
 
@@ -170,7 +169,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ---
 
 ## 🎉 Happy learning! 🚀
-```
 
 ### Key Updates for a More Structured and Beautiful Look:
 1. **Sections with Icons**: Using relevant emojis (`📚`, `⚙️`, `🛠`, etc.) makes the document visually engaging and allows for quicker identification of topics.
