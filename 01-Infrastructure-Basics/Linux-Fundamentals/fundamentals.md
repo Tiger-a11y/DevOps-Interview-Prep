@@ -1,9 +1,5 @@
 # Linux Fundamentals
 
-Linux is an open-source operating system kernel at the core of many operating systems. It powers everything from servers to desktop computers, mobile devices, and IoT systems. This guide will walk you through the essential concepts, focusing on **Ubuntu** as a primary reference, and will help you build a strong foundation in Linux.
-
----
-
 ## Table of Contents
 
 1. [What is Linux?](#what-is-linux)
