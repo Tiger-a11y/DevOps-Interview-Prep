@@ -163,5 +163,3 @@ For a more comprehensive understanding of Linux networking, consider exploring t
 - **Networking Tools**: `man ip`, `man netstat`, `man tcpdump`
 - **Firewall Configuration**: `man iptables`, `man nft`
 - **DNS and Routing**: `man resolv.conf`, `man route`
-
----
