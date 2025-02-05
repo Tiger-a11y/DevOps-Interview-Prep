@@ -17,7 +17,7 @@
 ---
 
 ## Introduction to Infrastructure
-![Introduction Image](path-to-your-image/introduction-image.png)
+![Introduction Image](./assets/it-infrastructure.gif)
 Infrastructure refers to the foundational physical and virtual systems that support the operation and delivery of applications, services, and data. It is the backbone that enables businesses to operate in a connected and digital environment.
 
 ### Key Elements of Infrastructure:
