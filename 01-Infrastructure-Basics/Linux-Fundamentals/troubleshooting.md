@@ -1,9 +1,3 @@
-# Linux Troubleshooting Guide
-
-Troubleshooting Linux systems is an essential skill for system administrators. Linux provides a variety of tools and techniques to diagnose issues with system performance, networking, disk I/O, memory usage, and processes. This guide outlines how to approach troubleshooting common Linux system problems and offers practical steps to resolve them.
-
----
-
 ## Table of Contents
 1. [Introduction to Troubleshooting](#introduction-to-troubleshooting)
 2. [System Boot Issues](#system-boot-issues)

@@ -1,9 +1,3 @@
-# Linux Performance Tuning Guide
-
-Performance tuning is a crucial aspect of system administration. Linux provides numerous tools and techniques to optimize the performance of the system, whether it be for CPU, memory, disk, or network resources. This guide will help you understand how to identify bottlenecks, apply optimizations, and monitor system performance effectively.
-
----
-
 ## Table of Contents
 1. [Introduction to Performance Tuning](#introduction-to-performance-tuning)
 2. [Understanding System Resource Management](#understanding-system-resource-management)
