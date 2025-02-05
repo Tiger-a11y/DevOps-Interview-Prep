@@ -164,7 +164,3 @@ A directory where the owner has full access, and the group can read and write fi
 - Learn how to use the **`chmod`**, **`chown`**, and **`chgrp`** commands to modify file permissions.
 - Understand the application of **special permissions** like **Setuid**, **Setgid**, and **Sticky Bit**.
 - Practice real-world scenarios to solidify your knowledge.
-
-By mastering file permissions, you ensure that Linux systems are both secure and properly configured for different user needs.
-
-```
