@@ -1,7 +1,3 @@
-Here's a revised version of your document with additional theory points for a deeper understanding of each topic:
-
----
-
 # Linux Networking Fundamentals
 
 ## Introduction
