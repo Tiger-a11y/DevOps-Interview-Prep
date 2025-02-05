@@ -1,7 +1,3 @@
-### **README.md**
-
-# DevOps Interview Preparation
-
 ![DevOps Interview Prep Banner](./assets/devops-banner.jpeg)
 
 ---
