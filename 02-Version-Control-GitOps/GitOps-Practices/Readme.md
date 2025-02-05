@@ -1,0 +1,1 @@
+**Hands-On Project:** Implement GitOps with ArgoCD  
