@@ -554,3 +554,93 @@ Containers are a more lightweight alternative to virtualization, enabling you to
 - ✔ Apply linting & validation (e.g., terraform validate, yamllint).
 
 [DevOps Pipeline with IaC]()
+
+# **High Availability & Scalability – Architecting Resilient Systems**  
+
+In modern **DevOps and cloud computing**, building **resilient, fault-tolerant, and scalable** systems is essential. High Availability (HA) ensures that services remain operational with minimal downtime, while **Scalability** enables systems to efficiently handle increasing workloads.  
+
+Both **HA and Scalability** are critical for meeting **Service Level Agreements (SLA)** and ensuring a seamless user experience. This section explores these concepts, strategies, and best practices in-depth.  
+
+---
+
+## **🔹 High Availability (HA)**  
+### **What is High Availability?**  
+- **High Availability (HA)** refers to designing systems that **minimize downtime** and ensure continuous operation, even in the event of hardware, software, or network failures.  
+- HA is typically measured by **uptime percentages**, which are often defined in **Service Level Agreements (SLA)**.  
+- Example: A system with **99.99% uptime** can have a maximum downtime of **52.56 minutes per year**.  
+
+### **Key Components of High Availability:**  
+✔ **Redundancy** – Deploying multiple instances of critical components to eliminate **Single Points of Failure (SPOF)**.  
+✔ **Failover Mechanisms** – Automatically switching to a **backup system** in case of failure.  
+✔ **Load Balancing** – Distributing traffic across multiple instances to prevent overload and improve performance.  
+✔ **Data Replication** – Storing **multiple copies of data** across different locations to prevent data loss.  
+✔ **Multi-Region Deployments** – Running services in **multiple geographical locations** for disaster recovery.  
+✔ **Automated Backups & Disaster Recovery** – Regularly backing up data and having **automated restoration plans**.  
+
+---
+
+## **🔹 Achieving High Availability**  
+### **1️⃣ Multi-AZ & Multi-Region Architectures**  
+- **Multi-AZ (Availability Zone):** Distributing instances across multiple zones within a **single region**.  
+- **Multi-Region:** Deploying across **multiple geographic regions** for added redundancy and disaster recovery.  
+- Example: AWS **RDS Multi-AZ** ensures database failover within the same region, while **Global DynamoDB Tables** replicate data across different regions.  
+
+### **2️⃣ Load Balancing for Reliability**  
+- **Types of Load Balancers:**  
+  ✔ **Application Load Balancer (ALB)** – Works at Layer 7 (HTTP/HTTPS) and routes traffic based on URL/path.  
+  ✔ **Network Load Balancer (NLB)** – Operates at Layer 4 (TCP/UDP) and handles large-scale connections.  
+  ✔ **Global Load Balancer** – Distributes traffic across multiple regions using **Anycast DNS** (e.g., AWS Route 53, Cloudflare, Akamai).  
+
+### **3️⃣ Active-Active vs. Active-Passive Failover**  
+| **Failover Strategy** | **Description** | **Example** |
+|----------------------|---------------|-------------|
+| **Active-Active** | Multiple instances are **actively** handling traffic simultaneously. | Global databases, multi-region load balancing |
+| **Active-Passive** | One instance is **on standby**, only activated when the primary instance fails. | Standby databases, disaster recovery failover |
+
+---
+
+## **🔹 Scalability**  
+### **What is Scalability?**  
+- **Scalability** is the ability of a system to **handle increased load** efficiently by **adding or upgrading resources**.  
+- A well-scalable system ensures **consistent performance** during **traffic spikes, seasonal loads, or sudden demand surges**.  
+- Example: **E-commerce sites scaling** during Black Friday sales to handle millions of concurrent users.  
+
+### **Types of Scalability:**  
+1️⃣ **Vertical Scaling (Scaling Up)** – Increasing the capacity of a **single** server (e.g., upgrading CPU, RAM, storage).  
+2️⃣ **Horizontal Scaling (Scaling Out)** – Adding more instances or nodes to **distribute the load**.  
+3️⃣ **Diagonal Scaling** – A combination of both vertical and horizontal scaling for **maximum flexibility**.  
+
+### **Key Scalability Strategies:**  
+✔ **Auto Scaling** – Automatically adjusting resources based on demand (e.g., AWS Auto Scaling, Kubernetes HPA).  
+✔ **Stateless Applications** – Decoupling state from application logic to **scale efficiently**.  
+✔ **Database Sharding & Replication** – Splitting data across multiple servers for improved performance.  
+✔ **Content Delivery Networks (CDN)** – Caching static content at edge locations to reduce origin server load.  
+✔ **Asynchronous Processing & Message Queues** – Handling high-throughput workloads efficiently (e.g., Kafka, RabbitMQ, SQS).  
+
+---
+
+## **🔹 Service Level Agreements (SLA), SLO, and SLI**  
+**Understanding the difference between SLA, SLO, and SLI is critical in defining reliability goals for high availability systems.**  
+
+| **Term** | **Definition** | **Example** |
+|---------|-------------|-------------|
+| **SLA (Service Level Agreement)** | A formal contract between a provider and customer defining expected uptime and service quality. | "99.9% uptime guarantee" |
+| **SLO (Service Level Objective)** | A specific target set by the provider to meet SLA commitments. | "Service response time < 200ms" |
+| **SLI (Service Level Indicator)** | A measurable metric that tracks performance against the SLO. | "Actual uptime = 99.95%" |
+
+📌 **Example:** If an SLA guarantees **99.95% uptime**, the corresponding **SLO** might be **99.98% uptime**, while the actual **SLI** could be **99.97% uptime** based on real-time monitoring.
+
+---
+
+## **🔹 High Availability & Scalability Best Practices**  
+✔ Use **Multi-AZ & Multi-Region** deployments for redundancy.  
+✔ Implement **load balancing** to distribute traffic efficiently.  
+✔ Configure **auto-scaling** to handle varying workloads dynamically.  
+✔ Store **backups** in multiple locations and automate disaster recovery.  
+✔ Monitor **SLIs & SLOs** to ensure SLA commitments are met.  
+✔ Leverage **cloud-native architectures** for flexible scalability (e.g., Kubernetes, Serverless).  
+
+---
+
+## **🔹 Diagram: High Availability & Scalability Architecture**  
+![HA and Scalability](https://upload.wikimedia.org/wikipedia/commons/3/35/N-tier_architecture.svg)  
