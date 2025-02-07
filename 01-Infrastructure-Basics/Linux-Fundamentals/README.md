@@ -80,11 +80,8 @@ Each section contains:
 
 > **Mastering Linux isn't optional in DevOps—it's a necessity!**  
 
----
+📢 *** Contribute & Stay Updated! ***
+- 🔹 Want to improve this guide? Feel free to submit a Pull Request (PR) or open an Issue.
+- 🔹 Stay updated: Watch & ⭐ the repo for new content!
 
-## **📌 Getting Started**  
-1️⃣ **Clone the repo and navigate to Linux Fundamentals:**  
-```bash
-git clone https://github.com/your-repo-name.git
-cd Infrastructure-Basics/Linux_Fundamentals
-```
+## 📌 Let’s build better infrastructure together!
