@@ -536,12 +536,14 @@ Containers are a more lightweight alternative to virtualization, enabling you to
 - Security & Compliance: Automate security policies & compliance checks.
 
 ## Popular IaC Tools
-|Tool	            |Type	                    |Cloud Provider Support
-|Terraform          |Declarative                |Multi-cloud (AWS, Azure, GCP)
-|AWS CloudFormation |Declarative |AWS-only
-|Ansible            |Mostly Imperative          |Multi-cloud
-|Puppet	            |Declarative	            |Multi-cloud
-|Chef	            |Declarative & Imperative	|Multi-cloud
+
+| Tool               | Type                      | Cloud Provider Support        |
+|--------------------|--------------------------|------------------------------|
+| Terraform         | Declarative               | Multi-cloud (AWS, Azure, GCP) |
+| AWS CloudFormation | Declarative               | AWS-only                      |
+| Ansible           | Mostly Imperative         | Multi-cloud                   |
+| Puppet           | Declarative               | Multi-cloud                   |
+| Chef              | Declarative & Imperative  | Multi-cloud                   |
 
 ## IaC Best Practices
 - ✔ Use modular code to improve reusability.
