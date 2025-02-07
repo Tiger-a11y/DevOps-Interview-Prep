@@ -475,3 +475,80 @@ Containers are a more lightweight alternative to virtualization, enabling you to
 - **Scalability and Automation**: With **Kubernetes**, containers can automatically scale to handle increased traffic or workload.
 
 ![Kubernetes Cluster](./assets/Kubernetes-cluster.png)
+
+# DevOps and Infrastructure as Code (IaC)
+
+## DevOps Overview
+- DevOps is a **cultural and technical movement** that integrates **Development (Dev)** and **Operations (Ops)** to improve **software delivery speed, quality, and collaboration**.
+- It focuses on **automation, continuous integration (CI), continuous delivery (CD), monitoring, and rapid feedback loops**.
+- **Key DevOps Principles:**
+  - **Collaboration & Communication** – Breaking silos between Dev & Ops teams.
+  - **Automation** – Reducing manual effort in build, test, deployment, and infrastructure provisioning.
+  - **Monitoring & Observability** – Ensuring application & infrastructure health.
+  - **Security (DevSecOps)** – Integrating security early in the development lifecycle.
+  - **Continuous Integration & Continuous Deployment (CI/CD)** – Automating software releases.
+[DevOps Overview]()
+---
+
+## Infrastructure as Code (IaC)
+### What is IaC?
+- **Infrastructure as Code (IaC)** is the practice of **defining, provisioning, and managing infrastructure using machine-readable scripts or configuration files**.
+- IaC enables **consistent, repeatable, and automated** infrastructure management across multiple environments.
+
+### Why IaC?
+✅ Eliminates **manual errors** & improves **consistency**.  
+✅ Makes infrastructure **scalable & flexible**.  
+✅ Enables **version control & rollback**.  
+✅ Speeds up **provisioning & disaster recovery**.  
+✅ Enhances **collaboration & automation** in DevOps workflows.  
+
+---
+
+## Types of IaC Approaches
+### 1️⃣ Declarative Approach (What to achieve)
+- Defines the **desired state** of the system, and the tool ensures the system reaches that state.
+- Example tools: **Terraform, Kubernetes YAML, AWS CloudFormation**.
+- **Example in Terraform:**
+  ```hcl
+  resource "aws_instance" "web" {
+    ami           = "ami-123456"
+    instance_type = "t2.micro"
+  }
+    ```
+### 2️⃣ Imperative Approach (How to achieve)
+- Defines step-by-step instructions to reach the final state.
+- Example tools: Ansible (in some cases), Bash scripts.
+- **Example in Ansible:**
+    ```yaml
+    - name: Install Nginx
+    hosts: web_servers
+    tasks:
+        - name: Install Nginx
+        apt:
+            name: nginx
+            state: present
+    ```
+- Benefits of IaC
+- Consistency: No configuration drift between environments.
+- Speed & Efficiency: Rapid infrastructure provisioning.
+- Version Control: Enables rollback & tracking of changes (e.g., using Git).
+- Scalability: Easily scale infrastructure using templates.
+- Security & Compliance: Automate security policies & compliance checks.
+
+## Popular IaC Tools
+|Tool	            |Type	                    |Cloud Provider Support
+|Terraform          |Declarative                |Multi-cloud (AWS, Azure, GCP)
+|AWS CloudFormation |Declarative |AWS-only
+|Ansible            |Mostly Imperative          |Multi-cloud
+|Puppet	            |Declarative	            |Multi-cloud
+|Chef	            |Declarative & Imperative	|Multi-cloud
+
+## IaC Best Practices
+- ✔ Use modular code to improve reusability.
+- ✔ Store configurations in version control (Git, GitHub, GitLab, Bitbucket).
+- ✔ Implement state management (e.g., Terraform state).
+- ✔ Follow security best practices (e.g., HashiCorp Vault for secrets management).
+- ✔ Use CI/CD pipelines for infrastructure automation.
+- ✔ Apply linting & validation (e.g., terraform validate, yamllint).
+
+[DevOps Pipeline with IaC]()
