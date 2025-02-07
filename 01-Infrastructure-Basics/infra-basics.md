@@ -131,7 +131,7 @@ A **Content Delivery Network (CDN)** is a distributed network of servers that wo
 1. **Edge Servers**:
    - Edge servers are strategically located in various geographical regions (called **Points of Presence (PoPs)**). These servers store cached copies of content, such as static website assets (images, stylesheets, etc.), and serve them to users from the closest location.
    - Example: If a user in India accesses a website hosted in the U.S., the CDN will serve content from the nearest edge server, likely in India or a neighboring country, rather than the U.S. data center.
-   ![Edge Servers](https://example.com/path/to/image/edge-servers.png)
+   ![Edge Servers](./assets/edge-servers.png)
 
 2. **Origin Servers**:
    - The origin server is the main server where the website's content is hosted. The CDN pulls content from the origin server and stores it in edge servers for future requests.
@@ -170,21 +170,22 @@ Data centers and CDNs work in tandem to optimize web performance and content del
 
 1. **Redundant Storage**:
    - Data centers house the original content (e.g., videos, files, applications), and CDNs cache copies of that content in various locations. This ensures that content is readily available, even if one data center experiences downtime.
-   ![Redundant Storage](https://example.com/path/to/image/redundant-storage.png)
+   ![Redundant Storage](./assets/local-redundunt-storage.jpg)
+   ![Redundant Storage](./assets/redundant-storage.png)
 
 2. **Global Load Balancing**:
    - Data centers rely on CDNs to balance the load of incoming traffic, ensuring that users are served content from the nearest available server, thus minimizing network congestion.
-   ![Global Load Balancing](https://example.com/path/to/image/global-load-balancing.png)
+   ![Global Load Balancing](./assets/global-load-balancing.png)
 
 3. **Improved Fault Tolerance**:
    - If a particular data center experiences an outage or high traffic load, CDNs will automatically reroute traffic to the next available server or data center, ensuring continuous service availability.
-   ![Improved Fault Tolerance](https://example.com/path/to/image/improved-fault-tolerance.png)
+   ![Improved Fault Tolerance](./assets/Fault-Tolerance.webp)
 
 4. **Speed and Efficiency**:
    - Data centers provide the computing and storage infrastructure for web services, while CDNs optimize the delivery of that content. CDNs help users experience faster load times, even for dynamic content, by utilizing smart caching and edge computing techniques.
-   ![Speed and Efficiency](https://example.com/path/to/image/speed-and-efficiency.png)
+   ![Speed and Efficiency](./assets)
 
-![CDN and Data Center Diagram](https://example.com/path/to/your-image/cdn-data-center.png)
+![CDN and Data Center Diagram](./assets/cdn-datacenter-network.png)
 
 ---
 ## Hardware and Servers
@@ -194,7 +195,7 @@ At the core of infrastructure are the physical machines, including **servers**, 
 ---
 
 ### Image Placeholder: Server Types Diagram
-![Server Types](path-to-your-image/server-types.png)
+![Server Types](./assets/blade-vs-rack-vs-tower-server.png)
 
 ---
 
@@ -206,19 +207,19 @@ Servers are powerful machines designed to handle tasks such as hosting websites,
    - Servers mounted in standardized racks, which are often used in data centers for scalability and efficient space utilization.
    - These servers are designed to save physical space and can easily be managed and maintained in large clusters.
    - **Use Case**: Common in data centers or enterprise environments that require high scalability.
-   ![Rack Servers](path-to-your-image/rack-servers.png)
+   ![Rack Servers](./assets/rack-servers.jpg)
 
 2. **Blade Servers**:
    - Slim, compact servers that fit into a chassis, allowing for high-density computing in a smaller footprint.
    - Blade servers share power supplies and cooling systems, improving efficiency and lowering costs.
    - **Use Case**: Ideal for organizations with space limitations but needing substantial processing power.
-   ![Blade Servers](path-to-your-image/blade-servers.png)
+   ![Blade Servers](./assets/blade-servers.jpg)
 
 3. **Tower Servers**:
    - Standalone, traditional servers resembling desktop PCs but designed to handle higher workloads and run continuously.
    - These servers are often used for smaller businesses or offices that don’t require a full data center.
    - **Use Case**: Best for small-scale setups or edge environments where space and resources are limited.
-   ![Tower Servers](path-to-your-image/tower-servers.png)
+   ![Tower Servers](./assets/tower-server.jpg)
 
 ---
 
@@ -229,12 +230,12 @@ Servers typically run specialized **Operating Systems (OS)**, chosen based on th
 - **Linux-based OS (Ubuntu, CentOS, Red Hat)**:
   - **Why Linux?**: Known for stability, security, and performance, Linux is often the go-to choice for web servers, databases, and containerized applications.
   - Most DevOps environments prefer Linux-based OS because of its strong support for development tools, automation frameworks, and cloud-native technologies.
-  ![Linux Server OS](path-to-your-image/linux-server-os.png)
+  ![Linux Server OS](./assets/linux-os.png)
 
 - **Windows Server**:
   - **Why Windows Server?**: Preferred when running Windows-specific applications, including Microsoft-based software like SQL Server or .NET applications.
   - It’s often used in organizations that rely heavily on Microsoft products and technologies.
-  ![Windows Server OS](path-to-your-image/windows-server-os.png)
+  ![Windows Server OS](./assets/windows-server-os.jpg)
 
 ---
 
@@ -245,7 +246,7 @@ Servers typically run specialized **Operating Systems (OS)**, chosen based on th
 - **Storage (HDD/SSD)**: Data storage systems for hosting websites, files, databases, and backups. Servers use **HDDs (Hard Disk Drives)** for cost-effective storage or **SSDs (Solid-State Drives)** for faster data access.
 - **Power Supply Units (PSUs)**: Supply consistent power to servers and other components. Many data centers have redundant power supplies to ensure high availability.
 - **Network Interface Cards (NICs)**: Allow servers to connect to the network, facilitating communication with other servers and the internet.
-   ![Server Hardware Components](path-to-your-image/server-hardware-components.png)
+   ![Server Hardware Components](./assets/server-components.webp)
 
 ---
 
@@ -258,7 +259,7 @@ Servers are the heart of a **DevOps** pipeline, hosting environments such as:
 - **Containerized environments**: Hosting Docker containers or Kubernetes clusters for deploying and scaling microservices.
 
 Servers are configured and managed using **Infrastructure as Code (IaC)** tools like **Ansible**, **Terraform**, and **Puppet**. These tools help automate the provisioning, configuration, and scaling of server infrastructure, enabling more efficient and repeatable server management.
-   ![DevOps Servers](path-to-your-image/devops-servers.png)
+   ![DevOps Servers]()
 
 ---
 
@@ -266,7 +267,7 @@ Servers are configured and managed using **Infrastructure as Code (IaC)** tools 
 - **Virtualization** allows multiple virtual machines (VMs) to run on a single physical server, effectively maximizing hardware utilization and improving scalability.
   - **Hypervisors** such as **VMware**, **Hyper-V**, and **KVM** manage virtual environments.
   - Virtual servers are commonly used in cloud environments and DevOps workflows, offering flexibility, resource allocation, and better management of workloads.
-   ![Server Virtualization](path-to-your-image/server-virtualization.png)
+   ![Server Virtualization](./assets/server-virtualization.jpg)
 
 ## Networking Fundamentals
 
@@ -282,7 +283,7 @@ Networking is the foundation of communication between computers, devices, and sy
    - **Example**: When you deploy a cloud-based service, it is assigned an IP address so users can access it via the internet.
    
    ### Image Placeholder: IP Addressing Example
-   ![IP Addressing Example](path-to-your-image/ip-addressing.png)
+   ![IP Addressing Example](./assets/ip-address-example.jpg)
 
 2. **Subnetting**:
    - **What it is**: **Subnetting** is the practice of dividing a large network into smaller, more manageable subnetworks (subnets). This helps optimize performance and security within the network.
@@ -290,7 +291,7 @@ Networking is the foundation of communication between computers, devices, and sy
    - **Example**: If a company has many departments (HR, Sales, IT), each department can have its own subnet to reduce network congestion.
 
    ### Image Placeholder: Subnetting Diagram
-   ![Subnetting Diagram](path-to-your-image/subnetting.png)
+   ![Subnetting Diagram](./assets/subnetting-example.jpg)
 
 3. **DNS (Domain Name System)**:
    - **What it is**: The **DNS** translates human-readable domain names (e.g., `google.com`) into machine-readable IP addresses (e.g., `172.217.10.46`).
@@ -298,7 +299,7 @@ Networking is the foundation of communication between computers, devices, and sy
    - **Example**: When you type `www.example.com` in your browser, DNS translates it into the corresponding IP address so the browser can connect to the website's server.
 
    ### Image Placeholder: DNS Resolution Diagram
-   ![DNS Resolution Diagram](path-to-your-image/dns-resolution.png)
+   ![DNS Resolution Diagram](./assets/Domain-name-resolution-process-with-DNS.ppm)
 
 4. **Routing**:
    - **What it is**: **Routing** determines how data packets travel between different networks. Routers direct data from one network to another, ensuring it reaches the correct destination.
@@ -306,7 +307,7 @@ Networking is the foundation of communication between computers, devices, and sy
    - **Example**: When accessing a website, routing ensures that your data packet travels from your local network to the appropriate server hosting the website.
 
    ### Image Placeholder: Routing Diagram
-   ![Routing Diagram](path-to-your-image/routing.png)
+   ![Routing Diagram](./assets/routing-diagram.png)
 
 5. **Switching**:
    - **What it is**: **Switching** refers to the process of directing data traffic within the same local network. Switches manage communication between devices like computers, printers, and servers within the same organization.
@@ -314,7 +315,7 @@ Networking is the foundation of communication between computers, devices, and sy
    - **Example**: In a local office network, a switch directs data traffic between a computer and a printer.
 
    ### Image Placeholder: Switching Diagram
-   ![Switching Diagram](path-to-your-image/switching.png)
+   ![Switching Diagram](./assets/switching-diagram.png)
 
 ---
 
@@ -327,7 +328,7 @@ When deploying a service in the cloud, you interact with various networking comp
 - **Routing** ensures that data sent to and from your service reaches its destination across multiple networks.
 
    ### Image Placeholder: Cloud Networking Example
-   ![Cloud Networking Example](path-to-your-image/cloud-networking.png)
+   ![Cloud Networking Example](./assets/Cloud-Network-example.webp)
 
 ---
 
@@ -340,7 +341,7 @@ In **DevOps**, networking plays a vital role in several areas:
 4. **Security**: Proper network security configurations (such as firewalls, VPNs, and subnets) are essential to protect the infrastructure and services from attacks and unauthorized access.
 
    ### Image Placeholder: DevOps Networking Example
-   ![DevOps Networking Example](path-to-your-image/devops-networking.png)
+   ![DevOps Networking Example](./assets/devops-networking-exapmple.png)
 
 ---
 ## The Internet and Cloud
@@ -363,7 +364,7 @@ Cloud computing refers to the delivery of computing resources (like servers, sto
      - **AWS EC2**: Offers scalable virtual servers and storage.
      - **Google Cloud Compute Engine**: Provides high-performance computing and customizable virtual machines.
      - **Azure Virtual Machines**: Microsoft's solution for on-demand virtual servers.
-   ![IaaS Diagram](path-to-your-image/iaas-diagram.png)
+   ![IaaS Diagram](./assets/IaaS-diagram.jpeg)
 
 2. **PaaS (Platform as a Service)**:
    - **Definition**: PaaS provides a platform that allows developers to build, run, and manage applications without worrying about the underlying hardware or infrastructure.
@@ -372,7 +373,7 @@ Cloud computing refers to the delivery of computing resources (like servers, sto
      - **Heroku**: A platform for building and deploying applications quickly.
      - **Google App Engine**: A fully managed serverless platform for developing and hosting web applications.
      - **Microsoft Azure App Services**: A fully managed PaaS offering for hosting web apps.
-   ![PaaS Diagram](path-to-your-image/paas-diagram.png)
+   ![PaaS Diagram](./assets/PaaS-Diagram.webp)
 
 3. **SaaS (Software as a Service)**:
    - **Definition**: SaaS delivers fully managed software applications over the internet, typically on a subscription basis. The software is hosted by the provider and accessed via a web browser.
@@ -381,7 +382,7 @@ Cloud computing refers to the delivery of computing resources (like servers, sto
      - **Gmail**: Email service hosted by Google.
      - **Office 365**: Microsoft’s suite of productivity software accessible via the web.
      - **Slack**: A communication platform for teams and businesses.
-   ![SaaS Diagram](path-to-your-image/saas-diagram.png)
+   ![SaaS Diagram](./assets/Saas-Diagram.jpg)
 
 ---
 
@@ -395,17 +396,17 @@ Cloud computing platforms offer robust, scalable infrastructure that can replace
 1. **Amazon Web Services (AWS)**:
    - **Services**: EC2 (virtual machines), S3 (object storage), Lambda (serverless computing), RDS (managed databases), etc.
    - **Best For**: Comprehensive infrastructure services, enterprise-grade solutions, and scalability.
-   ![AWS Logo](path-to-your-image/aws-logo.png)
+   ![AWS Logo](./assets/aws-logo.png)
 
 2. **Microsoft Azure**:
    - **Services**: Virtual Machines, App Services, Azure Functions (serverless), Azure SQL Database, etc.
    - **Best For**: Hybrid cloud, enterprise integration, and Windows-based environments.
-   ![Azure Logo](path-to-your-image/azure-logo.png)
+   ![Azure Logo](./assets/azure%20logo.png)
 
 3. **Google Cloud**:
    - **Services**: Compute Engine, App Engine, Kubernetes Engine, Cloud Storage, BigQuery, etc.
    - **Best For**: Data analytics, machine learning, and Kubernetes-based workloads.
-   ![Google Cloud Logo](path-to-your-image/google-cloud-logo.png)
+   ![Google Cloud Logo](./assets/GCP-logo.png)
 
 ---
 
@@ -423,77 +424,11 @@ The cloud is evolving to include:
 - **Edge Computing**: Distributing computation closer to where data is generated (like IoT devices) to reduce latency and improve real-time processing.
 - **Serverless Architectures**: A model where developers can run code in response to events without managing servers, leading to greater efficiency.
 - **Artificial Intelligence (AI) and Machine Learning (ML)**: Cloud providers are increasingly incorporating AI and ML tools, allowing businesses to leverage these technologies without needing specialized hardware.
-   ![Cloud Future Diagram](path-to-your-image/cloud-future.png)
+   ![Cloud Future Diagram](./assets/future-cloud-computing.jpg)
 
 ---
 
-![Cloud Computing Diagram](path-to-your-image/cloud-computing.png)
-
----
-# The Internet and Cloud
-
-The **Internet** is a vast, interconnected network that links millions of private, public, academic, business, and government networks worldwide. It operates on the **TCP/IP protocol suite**, allowing devices to communicate with each other regardless of location.
-
-Cloud computing revolutionized the way we access and store data, making computing resources available over the internet instead of relying on traditional on-premise data centers. This enables businesses and individuals to scale their infrastructure dynamically, without the need for physical hardware.
-
-## Cloud Computing Overview
-Cloud computing refers to the delivery of computing resources (like servers, storage, databases, networking, software) over the internet. These resources are hosted by cloud providers and can be accessed on-demand, offering flexibility, cost-efficiency, and scalability.
-
-![Cloud Computing](path-to-your-image/cloud-computing.png)
-
-## Types of Cloud Computing Services
-
-### 1. **IaaS (Infrastructure as a Service)**
-- **Definition**: IaaS provides virtualized computing resources over the internet, allowing organizations to rent physical servers and storage.
-- **Key Benefits**: Flexibility in resource allocation, cost savings by eliminating the need for physical hardware.
-- **Example Providers**:  
-  - **AWS EC2**: Offers scalable virtual servers and storage.
-  - **Google Cloud Compute Engine**: Provides high-performance computing and customizable virtual machines.
-  - **Azure Virtual Machines**: Microsoft's solution for on-demand virtual servers.
-
-![IaaS Architecture](path-to-your-image/iaas-architecture.png)
-
-### 2. **PaaS (Platform as a Service)**
-- **Definition**: PaaS provides a platform that allows developers to build, run, and manage applications without worrying about the underlying hardware or infrastructure.
-- **Key Benefits**: Speed of development, automatic scaling, and reduced infrastructure management.
-- **Example Providers**:
-  - **Heroku**: A platform for building and deploying applications quickly.
-  - **Google App Engine**: A fully managed serverless platform for developing and hosting web applications.
-  - **Microsoft Azure App Services**: A fully managed PaaS offering for hosting web apps.
-
-![PaaS Model](path-to-your-image/paas-model.png)
-
-### 3. **SaaS (Software as a Service)**
-- **Definition**: SaaS delivers fully managed software applications over the internet, typically on a subscription basis. The software is hosted by the provider and accessed via a web browser.
-- **Key Benefits**: No maintenance or infrastructure management needed, scalability, and quick software deployment.
-- **Example Providers**:
-  - **Gmail**: Email service hosted by Google.
-  - **Office 365**: Microsoft’s suite of productivity software accessible via the web.
-  - **Slack**: A communication platform for teams and businesses.
-
-![SaaS Model](path-to-your-image/saas-model.png)
-
-## Leading Cloud Providers
-
-### 1. **Amazon Web Services (AWS)**
-- **Services**: EC2 (virtual machines), S3 (object storage), Lambda (serverless computing), RDS (managed databases), etc.
-- **Best For**: Comprehensive infrastructure services, enterprise-grade solutions, and scalability.
-
-### 2. **Microsoft Azure**
-- **Services**: Virtual Machines, App Services, Azure Functions (serverless), Azure SQL Database, etc.
-- **Best For**: Hybrid cloud, enterprise integration, and Windows-based environments.
-
-### 3. **Google Cloud**
-- **Services**: Compute Engine, App Engine, Kubernetes Engine, Cloud Storage, BigQuery, etc.
-- **Best For**: Data analytics, machine learning, and Kubernetes-based workloads.
-
-![Cloud Providers](path-to-your-image/cloud-providers.png)
-
-## The Future of Cloud Computing
-The cloud is evolving to include:
-- **Edge Computing**: Distributing computation closer to where data is generated (like IoT devices) to reduce latency and improve real-time processing.
-- **Serverless Architectures**: A model where developers can run code in response to events without managing servers, leading to greater efficiency.
-- **Artificial Intelligence (AI) and Machine Learning (ML)**: Cloud providers are increasingly incorporating AI and ML tools, allowing businesses to leverage these technologies without needing specialized hardware.
+![Cloud Computing Diagram](./assets/cloud-computing-diagram.png)
 
 ---
 
@@ -501,7 +436,7 @@ The cloud is evolving to include:
 
 In modern infrastructure, virtualization and containers have revolutionized how applications and services are deployed, managed, and scaled. Both technologies offer isolation and resource optimization, but they differ in their approach, use cases, and efficiency.
 
-![Virtualization vs Containers](path-to-your-image/virtualization-vs-containers.png)
+![Virtualization vs Containers](./assets/containers-vs-virtual-machines.jpg)
 
 ## Virtualization
 Virtualization allows you to run multiple **Virtual Machines (VMs)** on a single physical server, each with its own operating system. This technique enables better resource utilization and isolation between different workloads.
@@ -513,7 +448,7 @@ Virtualization allows you to run multiple **Virtual Machines (VMs)** on a single
   - **Type 2 (Hosted Hypervisor)**: Runs on top of an existing operating system. It is typically used in development or testing environments.
     - Example: **VirtualBox**, **VMware Workstation**.
 
-![Hypervisor Diagram](path-to-your-image/hypervisor-diagram.png)
+![Hypervisor Diagram](./assets/hypervisor.png)
 
 ## Containers
 Containers are a more lightweight alternative to virtualization, enabling you to run applications and their dependencies in isolated environments known as **containers**. Unlike VMs, containers share the host OS kernel, which makes them faster and more resource-efficient.
@@ -522,7 +457,7 @@ Containers are a more lightweight alternative to virtualization, enabling you to
 - **Docker**: The most popular platform for containerization. Docker allows you to package applications and their dependencies into containers, making them portable across different environments (development, staging, production).
 - **Kubernetes**: An open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
 
-![Container Architecture](path-to-your-image/container-architecture.png)
+![Container Architecture](./assets/container-architecture.png)
 
 ## Comparison: Virtualization vs. Containers
 
@@ -539,4 +474,4 @@ Containers are a more lightweight alternative to virtualization, enabling you to
 - **Efficiency**: Containers are lightweight, leading to faster provisioning of resources.
 - **Scalability and Automation**: With **Kubernetes**, containers can automatically scale to handle increased traffic or workload.
 
-![Kubernetes Cluster](path-to-your-image/kubernetes-cluster.png)
+![Kubernetes Cluster](./assets/Kubernetes-cluster.png)
