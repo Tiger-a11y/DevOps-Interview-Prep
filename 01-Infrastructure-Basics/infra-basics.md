@@ -13,12 +13,10 @@
 9. [Monitoring and Automation](#monitoring-and-automation)
 10. [Security and Compliance](#security-and-compliance)
 11. [The Future of Infrastructure](#the-future-of-infrastructure)
-12. [Images & Visual Aids](#images--visual-aids)
-
 ---
 
 ## Introduction to Infrastructure
-![Introduction Image](./assets/it-infrastructure.gif)
+![Introduction Image](./assets/Infra-basics.jpg)
 Infrastructure refers to the foundational physical and virtual systems that support the operation and delivery of applications, services, and data. It is the backbone that enables businesses to operate in a connected and digital environment.
 
 ### Key Elements of Infrastructure:
@@ -560,7 +558,7 @@ Containers are a more lightweight alternative to virtualization, enabling you to
 
 In modern **DevOps and cloud computing**, building **resilient, fault-tolerant, and scalable** systems is essential. High Availability (HA) ensures that services remain operational with minimal downtime, while **Scalability** enables systems to efficiently handle increasing workloads.  
 
-Both **HA and Scalability** are critical for meeting **Service Level Agreements (SLA)** and ensuring a seamless user experience. This section explores these concepts, strategies, and best practices in-depth.  
+Both **HA and Scalability** are critical for meeting **Service Level Agreements (SLA)** and ensuring a seamless user experience.
 
 ---
 
@@ -645,3 +643,234 @@ Both **HA and Scalability** are critical for meeting **Service Level Agreements 
 
 ## **🔹 Diagram: High Availability & Scalability Architecture**  
 ![HA and Scalability](https://upload.wikimedia.org/wikipedia/commons/3/35/N-tier_architecture.svg)  
+
+
+# **Monitoring and Automation**  
+
+## **🔹 Introduction**  
+In DevOps, **Monitoring** ensures system health, performance, and availability, while **Automation** reduces manual effort, enhances efficiency, and ensures consistency. Together, they enable proactive issue resolution, faster deployments, and seamless scalability.  
+
+---
+
+## **🔹 Monitoring**  
+### **What is Monitoring?**  
+- Monitoring involves continuously tracking system metrics, logs, and application performance to detect anomalies, failures, and security issues.  
+- It helps DevOps teams **identify, analyze, and resolve issues proactively** before they impact users.  
+
+### **Types of Monitoring:**  
+1️⃣ **Infrastructure Monitoring** – Tracks CPU, memory, disk, and network usage of servers, VMs, and containers.  
+2️⃣ **Application Performance Monitoring (APM)** – Observes response time, error rates, and service dependencies.  
+3️⃣ **Log Monitoring** – Collects and analyzes logs from applications, databases, and system components.  
+4️⃣ **Network Monitoring** – Monitors latency, bandwidth, and packet loss to ensure network health.  
+5️⃣ **Security Monitoring** – Detects unauthorized access, vulnerabilities, and security threats.  
+6️⃣ **User Experience Monitoring** – Tracks page load times, API response times, and overall user interactions.  
+
+### **Key Metrics to Monitor (SLI – Service Level Indicators):**  
+✔ **Availability (Uptime %)** – Ensures system reliability (e.g., 99.99% uptime).  
+✔ **Latency (Response Time)** – Measures API and application responsiveness.  
+✔ **Error Rate** – Tracks failed requests, HTTP 5xx errors, and database failures.  
+✔ **Throughput** – Number of requests or transactions processed per second.  
+✔ **Resource Utilization** – CPU, memory, disk, and network usage across systems.  
+
+---
+
+## **🔹 Monitoring Tools**  
+🔹 **Infrastructure Monitoring:** Prometheus, Datadog, Zabbix, Nagios  
+🔹 **APM (Application Performance Monitoring):** New Relic, Dynatrace, AppDynamics  
+🔹 **Log Monitoring:** ELK Stack (Elasticsearch, Logstash, Kibana), Graylog, Splunk  
+🔹 **Network Monitoring:** Wireshark, Nagios, SolarWinds  
+🔹 **Security Monitoring:** SIEM (Security Information and Event Management), AWS GuardDuty  
+
+---
+
+## **🔹 Automation**  
+### **What is Automation?**  
+- Automation in DevOps eliminates **manual, repetitive tasks** to improve speed, reliability, and consistency across the software development lifecycle (SDLC).  
+- It enables **Infrastructure as Code (IaC), Continuous Integration/Continuous Deployment (CI/CD), and automated monitoring/remediation**.  
+
+### **Key Areas of Automation:**  
+✔ **Infrastructure Automation (IaC)** – Automating provisioning using tools like Terraform, Ansible, CloudFormation.  
+✔ **CI/CD Pipelines** – Automating build, test, and deployment workflows with Jenkins, GitHub Actions, GitLab CI.  
+✔ **Configuration Management** – Ensuring consistent system states using Ansible, Puppet, Chef.  
+✔ **Self-Healing Systems** – Automating incident detection and recovery using AWS Auto Scaling, Kubernetes HPA.  
+✔ **Automated Monitoring & Alerts** – Integrating Prometheus, ELK, or Datadog with Slack, PagerDuty for proactive alerts.  
+
+### **Benefits of Automation in DevOps:**  
+✔ **Reduces human errors** – Ensures consistency and reliability.  
+✔ **Speeds up deployments** – CI/CD automation leads to faster releases.  
+✔ **Improves scalability** – Systems scale dynamically based on demand.  
+✔ **Enhances security** – Automated security scans and compliance enforcement.  
+
+---
+
+## **🔹 Best Practices for Monitoring & Automation**  
+✔ **Define and track key SLIs and SLOs** to measure performance.  
+✔ **Enable proactive alerting** to detect issues before they escalate.  
+✔ **Automate remediation** to fix common issues without manual intervention.  
+✔ **Integrate monitoring with CI/CD pipelines** to ensure stability.  
+✔ **Use log aggregation tools** to centralize logs for faster debugging.  
+✔ **Leverage Infrastructure as Code (IaC)** for consistent deployments.  
+✔ **Continuously optimize monitoring dashboards** to focus on critical metrics.  
+
+---
+
+## **🔹 Diagram: Monitoring & Automation Workflow**  
+![Monitoring and Automation](https://upload.wikimedia.org/wikipedia/commons/3/35/N-tier_architecture.svg)  
+
+# **Security and Compliance**  
+
+## **🔹 Introduction**  
+Security and compliance are critical in infrastructure management, ensuring **systems, networks, and data** remain protected while meeting regulatory and industry standards.  
+In DevOps, security is integrated into the infrastructure from the start (**Shift Left Security**) rather than being an afterthought.  
+
+---
+
+## **🔹 Core Principles of Infrastructure Security**  
+✔ **Confidentiality** – Protect sensitive data from unauthorized access.  
+✔ **Integrity** – Ensure data and infrastructure configurations are not tampered with.  
+✔ **Availability** – Maintain system uptime and resilience against threats.  
+
+🖼️ **_Infrastructure Security Model:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Infrastructure+Security+Model)  
+
+---
+
+## **🔹 Key Security Aspects in Infrastructure**  
+
+### **1️⃣ Identity & Access Management (IAM)**  
+- Implement **Role-Based Access Control (RBAC)** and **Principle of Least Privilege (PoLP)**.  
+- Use **Multi-Factor Authentication (MFA)** for privileged accounts.  
+- Rotate credentials and secrets using **AWS IAM, Azure AD, HashiCorp Vault**.  
+- Avoid hardcoding secrets in code; use **Secrets Management tools** (e.g., AWS Secrets Manager, Azure Key Vault).  
+
+🖼️ **_IAM Security Model:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=IAM+Security+Model)  
+
+---
+
+### **2️⃣ Secure Network Architecture**  
+- Use **Network Segmentation** (e.g., VPCs, Subnets, Security Groups) to isolate workloads.  
+- Apply **firewall rules** and **Network Access Control Lists (NACLs)** to limit unauthorized access.  
+- Encrypt data in transit using **TLS/SSL, VPNs**, and **private endpoints** for internal communication.  
+- Implement **Zero Trust Architecture (ZTA)** – authenticate and validate every request.  
+
+🖼️ **_Network Security Best Practices:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Network+Security+Best+Practices)  
+
+---
+
+### **3️⃣ Secure Infrastructure as Code (IaC)**  
+- Enforce security policies in **Terraform, CloudFormation, Ansible**.  
+- Scan IaC templates using **Checkov, tfsec, or Terrascan**.  
+- Use **Immutable Infrastructure** to prevent unauthorized modifications.  
+
+🖼️ **_Secure IaC Workflow:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Secure+IaC+Workflow)  
+
+---
+
+### **4️⃣ Patch Management & System Hardening**  
+- Automate security patching using **AWS Systems Manager, Azure Update Management**.  
+- Disable unnecessary services and remove unused ports to reduce attack surface.  
+- Regularly update OS, dependencies, and libraries to fix vulnerabilities.  
+
+🖼️ **_Patch Management Process:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Patch+Management+Process)  
+
+---
+
+### **5️⃣ Logging, Monitoring, and Incident Response**  
+- Enable **real-time logging and auditing** using **SIEM solutions** (e.g., Splunk, ELK, AWS CloudTrail).  
+- Set up **intrusion detection** using **AWS GuardDuty, Azure Sentinel, Wazuh**.  
+- Configure **automated alerts** and integrate them with **PagerDuty, Slack, or Opsgenie**.  
+- Implement **Incident Response Plans** and regularly test disaster recovery processes.  
+
+🖼️ **_Monitoring & Incident Response Framework:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Monitoring+%26+Incident+Response+Framework)  
+
+---
+
+### **6️⃣ Compliance & Regulatory Standards**  
+- Follow industry security frameworks:  
+  - **ISO 27001** – Information security management.  
+  - **NIST (National Institute of Standards and Technology)** – Cybersecurity best practices.  
+  - **SOC 2 (Service Organization Control 2)** – Cloud security for SaaS companies.  
+  - **GDPR, HIPAA, PCI-DSS** – Compliance for data protection in specific industries.  
+- Automate compliance audits using **AWS Config, Azure Policy, and GCP Security Command Center**.  
+
+🖼️ **_Compliance Frameworks:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Compliance+Frameworks)  
+
+---
+
+## **🔹 Best Practices for Secure Infrastructure**  
+✔ **Enforce IAM best practices** – Use RBAC, MFA, and credential rotation.  
+✔ **Harden cloud and on-prem infrastructure** – Secure ports, apply patches, and enforce encryption.  
+✔ **Monitor logs and implement threat detection** – Use SIEM tools for proactive security.  
+✔ **Automate security scanning and compliance checks** – Shift security left in the DevOps pipeline.  
+✔ **Follow Zero Trust principles** – Assume no trust, verify every access request.  
+
+🖼️ **_Security Best Practices Overview:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Security+Best+Practices)  
+
+# **The Future of Infrastructure**  
+
+## **🔹 Introduction**  
+Infrastructure is rapidly evolving, driven by **cloud computing, automation, AI, and edge technologies**. The future of infrastructure is defined by **scalability, resilience, security, and sustainability**, ensuring systems are **self-healing, adaptive, and efficient**.  
+
+🖼️ **_Next-Gen Infrastructure Overview:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Future+of+Infrastructure)  
+
+---
+
+## **🔹 Key Trends Shaping Infrastructure**  
+
+### **1️⃣ Cloud-Native and Serverless Architectures**  
+- Adoption of **serverless computing** (AWS Lambda, Azure Functions) to reduce infrastructure overhead.  
+- Shift from **monolithic to microservices** and **containerized** deployments (Kubernetes, Docker).  
+- **Multi-cloud and hybrid-cloud strategies** to enhance flexibility and avoid vendor lock-in.  
+
+---
+
+### **2️⃣ AI and Autonomous Infrastructure**  
+- AI-driven **self-healing systems** that predict and resolve failures automatically.  
+- AI-powered **observability** (AIOps) for real-time performance monitoring and anomaly detection.  
+- **Predictive scaling** using AI/ML to optimize infrastructure resources dynamically.  
+
+🖼️ **_AI in Infrastructure Management:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=AI+in+Infrastructure+Management)  
+
+---
+
+### **3️⃣ Infrastructure as Code (IaC) Evolution**  
+- **Policy-as-Code (PaC)** for security compliance and governance (e.g., Open Policy Agent, AWS Config).  
+- **GitOps and Event-Driven Infrastructure** to automate infrastructure provisioning and updates.  
+- **Drift detection & auto-remediation** to maintain infrastructure consistency.  
+
+---
+
+### **4️⃣ Edge Computing & Decentralized Infrastructure**  
+- Shift from centralized cloud to **distributed edge computing** for low-latency processing.  
+- **5G and IoT infrastructure** enabling real-time data processing at the network edge.  
+- **Fog computing** reducing cloud dependency for critical workloads.  
+
+🖼️ **_Edge Computing Architecture:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Edge+Computing+Architecture)  
+
+---
+
+### **5️⃣ Sustainability and Green Computing**  
+- **Carbon-aware computing** optimizing workloads for energy-efficient regions.  
+- **Data center innovations** (liquid cooling, renewable energy-powered infrastructure).  
+- **Auto-scaling & serverless approaches** reducing unnecessary compute usage.  
+
+---
+
+## **🔹 The Future of DevOps in Infrastructure**  
+✔ **NoOps and AI-driven Operations** – Fully automated infrastructure with minimal human intervention.  
+✔ **Quantum Computing Infrastructure** – High-performance computing for complex problem-solving.  
+✔ **Cybersecurity-First Infrastructure** – Zero Trust, AI-based threat detection, and automated compliance.  
+✔ **Composable Infrastructure** – Modular, API-driven architecture for dynamic adaptability.  
+
+🖼️ **_The Roadmap for Future Infrastructure:_**  
+![Placeholder Image](https://via.placeholder.com/800x400?text=Future+Infrastructure+Roadmap)  
