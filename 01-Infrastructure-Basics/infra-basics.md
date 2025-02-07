@@ -29,7 +29,8 @@ Infrastructure refers to the foundational physical and virtual systems that supp
 ---
 
 ## The Role of Data Centers
-![Data Center Image](path-to-your-image/data-center-image.png)
+![Data Center Image](./assets/data-center.jpg)
+
 A **Data Center** is a specialized facility that provides computing resources, storage, and networking capabilities essential for the functioning of applications, websites, services, and other computing tasks.
 
 ### Key Components of a Data Center:
@@ -85,7 +86,7 @@ The rise of **DevOps** has transformed data centers. With **virtualization**, **
 ### Future of Data Centers and DevOps
 Data centers are evolving to be smarter with the advent of **edge computing**, **AI automation**, and **5G networks**. DevOps engineers will play a key role in leveraging these technologies for more efficient operations.
 
-![Future Data Centers Image](path-to-your-image/future-data-centers.png)
+![Future Data Centers Image](./assets/Future-of-Data-Center.jpg)
 
 ----
 # How Data Centers Communicate and the Role of CDN Networks
@@ -96,21 +97,24 @@ Data centers are essential for the storage, management, and delivery of informat
 
 Data centers are connected to each other via **high-speed fiber optic networks** and **private leased lines** that enable data exchange. These connections form the backbone of global internet infrastructure, ensuring fast and reliable communication between geographically dispersed locations.
 
+![High Speed Fiber Optic Network Image](./assets/fiber-optic-network-cdn.jpg)
+![Private Leased Lines Image](./assets/private-leased-line.jpg)
+
 #### Key Communication Methods:
 1. **Private Network Connections**:
    - Large-scale data centers often establish private, dedicated links between their locations, enabling low-latency and secure data transfer. These connections typically use high-bandwidth protocols like **MPLS (Multiprotocol Label Switching)** or **Ethernet**.
    - Example: A global e-commerce company may have data centers in the U.S., Europe, and Asia, connected via private networks to facilitate fast and secure transaction processing across regions.
-   ![Private Network Connections](https://example.com/path/to/image/private-network-connections.png)
+   ![Private Network Connections](./assets/private-network-connections.png)
 
 2. **Inter-Data Center Communication**:
    - Data centers within the same provider (like AWS, Google Cloud, or Microsoft Azure) are interconnected using **backbone networks** and high-speed connections, ensuring low latency and redundancy.
    - Example: An application hosted on AWS in North Virginia could easily communicate with services in their data centers located in Tokyo, reducing the impact of geographic distance.
-   ![Inter-Data Center Communication](https://example.com/path/to/image/inter-data-center-communication.png)
+   ![Inter-Data Center Communication](./assets/Data-Center-Interconnection.webp)
 
 3. **Peering and Internet Exchange Points (IXPs)**:
    - Data centers may use **IXPs** to exchange traffic directly between them and other networks, reducing the need for intermediary ISPs (Internet Service Providers). This improves performance and reduces costs.
    - Example: An ISP might exchange traffic at an IXP with another ISP, allowing direct communication between their respective networks without additional routing.
-   ![Peering and IXPs](https://example.com/path/to/image/peering-ixps.png)
+   ![Peering and IXPs](./assets/peering-and-internet-exchange-points-ixp.png)
 
 #### **Benefits of Data Center Communication**:
 - **Low Latency**: Data centers communicate in near-real-time, ensuring that web applications and services are responsive, even for global users.
@@ -132,12 +136,13 @@ A **Content Delivery Network (CDN)** is a distributed network of servers that wo
 2. **Origin Servers**:
    - The origin server is the main server where the website's content is hosted. The CDN pulls content from the origin server and stores it in edge servers for future requests.
    - Example: A streaming service might host its videos on an origin server but deliver them to users through a CDN to minimize buffering times.
-   ![Origin Servers](https://example.com/path/to/image/origin-servers.png)
+   ![Origin Servers](./assets/origin-server-explained.png)
+   ![servers comparison](./assets/cdn-without-cdn.png)
 
 3. **Cache Servers**:
    - Cache servers in the CDN store copies of frequently requested content to reduce the load on the origin server and improve delivery speed. Cached content is refreshed periodically based on the CDN's cache expiration policies.
    - Example: High-traffic websites like e-commerce stores or news sites cache product images or articles on CDN servers to improve user experience.
-   ![Cache Servers](https://example.com/path/to/image/cache-servers.png)
+   ![Cache Servers](./assets/cache-server.png)
 
 #### **How CDNs Improve Performance**:
 - **Reduced Latency**: By serving content from edge servers that are geographically closer to users, CDNs significantly reduce the round-trip time for requests, improving loading times.
@@ -147,16 +152,15 @@ A **Content Delivery Network (CDN)** is a distributed network of servers that wo
 #### Popular CDN Providers:
 1. **Cloudflare**:
    - Offers a global network with integrated security features (DDoS protection, Web Application Firewall).
-   ![Cloudflare CDN](https://example.com/path/to/image/cloudflare-cdn.png)
+   ![Cloudflare CDN](./assets/./cdn_cloudflare.png)
 2. **Amazon CloudFront**:
    - AWS’s CDN service integrates seamlessly with other AWS services and provides high scalability and low latency.
-   ![Amazon CloudFront](https://example.com/path/to/image/amazon-cloudfront.png)
+   ![Amazon CloudFront](./assets/cloudfront-cnd.png)
 3. **Akamai**:
    - One of the oldest and largest CDN providers, offering advanced features like media delivery optimization.
-   ![Akamai CDN](https://example.com/path/to/image/akamai-cdn.png)
+
 4. **Fastly**:
    - A real-time CDN provider designed for high-speed dynamic content delivery, commonly used by tech-heavy companies like GitHub and Reddit.
-   ![Fastly CDN](https://example.com/path/to/image/fastly-cdn.png)
 
 ---
 
