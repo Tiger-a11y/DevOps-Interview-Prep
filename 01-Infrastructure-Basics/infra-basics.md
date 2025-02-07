@@ -9,10 +9,11 @@
 5. [The Internet and Cloud](#the-internet-and-cloud)
 6. [Virtualization and Containers](#virtualization-and-containers)
 7. [DevOps and Infrastructure as Code](#devops-and-infrastructure-as-code-iac)
-8. [Monitoring and Automation](#monitoring-and-automation)
-9. [Security and Compliance](#security-and-compliance)
-10. [The Future of Infrastructure](#the-future-of-infrastructure)
-11. [Images & Visual Aids](#images--visual-aids)
+8. [High Availability & Scalability – Architecting Resilient Systems](#high-availability--scalability--architecting-resilient-systems)
+9. [Monitoring and Automation](#monitoring-and-automation)
+10. [Security and Compliance](#security-and-compliance)
+11. [The Future of Infrastructure](#the-future-of-infrastructure)
+12. [Images & Visual Aids](#images--visual-aids)
 
 ---
 
