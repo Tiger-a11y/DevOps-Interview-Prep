@@ -8,7 +8,7 @@
 4. [Networking Fundamentals](#networking-fundamentals)
 5. [The Internet and Cloud](#the-internet-and-cloud)
 6. [Virtualization and Containers](#virtualization-and-containers)
-7. [DevOps and Infrastructure as Code](#devops-and-infrastructure-as-code)
+7. [DevOps and Infrastructure as Code](#devOps-and-infrastructure-as-code-(iaC))
 8. [Monitoring and Automation](#monitoring-and-automation)
 9. [Security and Compliance](#security-and-compliance)
 10. [The Future of Infrastructure](#the-future-of-infrastructure)
